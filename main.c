@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
 * main - monty code interpreter
@@ -10,7 +11,6 @@
 * Return: 0 on success
 */
 
-bus_t bus = {NULL, NULL, NULL, 0};
 int main(int argc, char *argv[])
 {
 	char *content;
