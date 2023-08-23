@@ -7,6 +7,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -16,6 +17,7 @@
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
+
 typedef struct stack_s
 {
 	int n;
@@ -23,6 +25,7 @@ typedef struct stack_s
 	struct stack_s *next;
 } 
 stack_t;
+
 /**
  * struct bus_s - variables -args, file, line content
  * @arg: value
@@ -31,6 +34,7 @@ stack_t;
  * @lifi: flag change stack <-> queue
  * Description: carries values through the program
  */
+
 typedef struct bus_s
 {
 	char *arg;
@@ -40,6 +44,7 @@ typedef struct bus_s
 }  
 bus_t;
 extern bus_t bus;
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -48,6 +53,7 @@ extern bus_t bus;
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
+
 typedef struct instruction_s
 {
 	char *opcode;
